@@ -10,10 +10,10 @@ import { peopleReducer } from './state-management/reducers/people.reducer';
 import { FormComponent } from './views/form/form.component';
 import { ListComponent } from './views/list/list.component';
 import { UserListComponent } from './views/user-list/user-list.component';
-import { UserFilterPipe } from './views/user-list/pipes/user-filter.pipe';
 import { PaginationComponent } from './views/user-list/pagination/pagination.component';
 import { EditModalComponent } from './views/list/edit-modal/edit-modal.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { UserFilterPipe } from './pipes/user-filter.pipe';
 
 @NgModule({
   declarations: [

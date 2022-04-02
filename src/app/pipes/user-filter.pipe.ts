@@ -1,6 +1,6 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { User } from '../../../models/user';
-import { GridService } from '../service/grid.service';
+import { User } from '../models/user';
+import { GridService } from '../state-management/grid.service';
 
 @Pipe({
   name: 'userFilter', pure: false

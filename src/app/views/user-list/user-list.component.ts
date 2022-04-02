@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { PlaceholderService } from 'src/app/api/placeholder.service';
 import { User } from 'src/app/models/user';
-import { UserFilterPipe } from 'src/app/views/user-list/pipes/user-filter.pipe';
-import { GridService } from './service/grid.service';
+import { UserFilterPipe } from 'src/app/pipes/user-filter.pipe';
+import { GridService } from 'src/app/state-management/grid.service';
 
 @Component({
   selector: 'app-user-list',

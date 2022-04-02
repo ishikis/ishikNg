@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { GridService } from '../service/grid.service';
+import { GridService } from 'src/app/state-management/grid.service';
 
 @Component({
   selector: 'app-pagination',

@@ -9,7 +9,6 @@
             </div>
             <div class="modal-body" *ngIf="people">
 
-                {{people|json}}
                 <form (ngSubmit)="save()" #peopleForm="ngForm">
                     <div class="form-group mb-2">
                         <label>Name</label>

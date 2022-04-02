@@ -21,7 +21,7 @@ export class MessageService {
     alertify.warning(message);
   }
   
-  info(message: string) {
-    alertify.info(message);
+  message(message: string) {
+    alertify.message(message);
   }
 }

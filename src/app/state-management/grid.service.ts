@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { RouterLinkWithHref } from '@angular/router';
 import { BehaviorSubject } from 'rxjs';
-import { pagination } from '../model/pagination';
+import { pagination } from '../models/pagination';
 
 @Injectable({
     providedIn: 'root'

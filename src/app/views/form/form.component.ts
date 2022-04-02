@@ -43,7 +43,7 @@ export class FormComponent implements OnInit {
 
       this.messageService.success('People added successfuly')
     } else {
-      this.messageService.info('Warn : Please fill the required fields')
+      this.messageService.warning('Warn : Please fill the required fields')
     }
   }
 
