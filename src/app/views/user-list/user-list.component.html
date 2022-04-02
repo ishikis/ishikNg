@@ -1,0 +1,40 @@
+<table class=" table table-bordered table-sm">
+    <thead>
+        <tr>
+            <td>Id</td>
+            <td>Name</td>
+            <td>User Name</td>
+            <td>Email</td>
+            <td>Addres Street</td>
+            <td>Addres Suite</td>
+            <td>Address City</td>
+            <td>Phone</td>
+            <td>Website</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="text" [(ngModel)]="filterParams.name" placeholder="Name"></td>
+            <td><input type=" text" [(ngModel)]="filterParams.username" placeholder="User Name"></td>
+            <td><input type="text" [(ngModel)]="filterParams.email" placeholder="Email"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><input type="text" [(ngModel)]="filterParams.phone" placeholder="Phone"></td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of data | userFilter : filterParams | slice : current * size : ( current + 1 ) * size">
+            <td>{{item.id}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.username}}</td>
+            <td>{{item.email}}</td>
+            <td>{{item.address.street}}</td>
+            <td>{{item.address.suite}}</td>
+            <td>{{item.address.city}}</td>
+            <td>{{item.phone}}</td>
+            <td>{{item.website}}</td>
+        </tr>
+    </tbody>
+</table>
+<app-pagination></app-pagination>

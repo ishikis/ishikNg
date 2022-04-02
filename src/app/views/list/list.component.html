@@ -1,0 +1,31 @@
+<div class="card">
+  <div class="card-header">List</div>
+  <div class="card-body">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <td>id</td>
+          <td>Name</td>
+          <td>Surname</td>
+          <td>Gender</td>
+          <td>Job</td>
+          <td>Actions</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let p of peoples.data">
+          <td>{{ p.id }}</td>
+          <td>{{ p.name }}</td>
+          <td>{{ p.surname }}</td>
+          <td>{{ p.gender }}</td>
+          <td>{{ p.job }} </td>
+          <td>
+            <i class="fas fa-edit" (click)="open(p)"></i>
+            <i class="fas fa-eraser" (click)="delete(p)"></i>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<app-edit-modal #editModal></app-edit-modal>
