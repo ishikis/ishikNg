@@ -6,6 +6,7 @@ import { Injectable } from '@angular/core';
 export class JobService {
 
     jobList = [
+        { id: '', text: '' },
         { id: 'Mühendis', text: 'Mühendis' },
         { id: 'Öğretmen', text: 'Öğretmen' },
         { id: 'Doktor', text: 'Doktor' },

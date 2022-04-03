@@ -6,15 +6,12 @@
       <label for="name">Name</label>
       <input id="name" formControlName="name" type="text" class="form-control"
         [ngClass]="{'is-valid':isSubmited && this.controls['name'].valid,'is-invalid':isSubmited && !this.controls['name'].valid}">
-      <div class="invalid-feedback" *ngIf="isSubmited && !this.controls['name'].valid">
-        Please provide a valid name.
-      </div>
     </div>
 
     <div class="form-group mb-2">
       <label for="surname">Surname</label>
       <input id="surname" formControlName="surname" type="text" class="form-control"
-        [ngClass]="{'is-valid':isSubmited && this.controls['name'].valid,'is-invalid':isSubmited && !this.controls['name'].valid}">
+        [ngClass]="{'is-valid':isSubmited && this.controls['surname'].valid,'is-invalid':isSubmited && !this.controls['surname'].valid}">
     </div>
 
     <div class="form-group mb-2">
@@ -27,12 +24,15 @@
         <input id="male" name="gender" formControlName="gender" class="form-check-input" type="radio" value="male" />
         <label class="form-check-label" for="male">male</label>
       </div>
+      <div class="invalid-feedback" *ngIf="isSubmited && !this.controls['gender'].valid">
+        Required field
+      </div>
     </div>
 
     <div class="form-group mb-2">
       <label for="job">job</label>
       <select id="job" formControlName="job" class="form-control"
-        [ngClass]="{'is-valid':isSubmited && this.controls['name'].valid,'is-invalid':isSubmited && !this.controls['name'].valid}">
+        [ngClass]="{'is-valid':isSubmited && this.controls['job'].valid,'is-invalid':isSubmited && !this.controls['job'].valid}">
         <option *ngFor="let c of jobList" value="{{ c.id }}">
           {{ c.text }}
         </option>

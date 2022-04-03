@@ -19,8 +19,8 @@ export class FormComponent implements OnInit {
   frm = new FormGroup({
     name: new FormControl({ value: '', disabled: false }, [Validators.required, this.notWhiteSpaceValidator]),
     surname: new FormControl({ value: '', disabled: false }, [Validators.required, Validators.minLength(2)]),
-    gender: new FormControl(Validators.required),
-    job: new FormControl(Validators.required)
+    gender: new FormControl({ value: 'female', disabled: false }, Validators.required),
+    job: new FormControl({ value: '', disabled: false }, Validators.required)
   });
 
   constructor(private store: Store<People>, private messageService: MessageService, private jobservice: JobService) { this.jobList = jobservice.jobList; }
