@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Store } from '@ngrx/store';
+import { People } from 'src/app/models/people';
 import { removePeople } from 'src/app/state-management/actions/people.action';
-import { People } from '../../models/people';
 import { EditModalComponent } from './edit-modal/edit-modal.component';
 
 

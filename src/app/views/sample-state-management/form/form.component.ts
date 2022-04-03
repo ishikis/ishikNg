@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
+import { People } from 'src/app/models/people';
 import { JobService } from 'src/app/services/job.service';
 import { MessageService } from 'src/app/services/message.service';
-import { People } from '../../models/people';
-import { addPeople } from '../../state-management/actions/people.action';
+import { addPeople } from 'src/app/state-management/actions/people.action';
 
 @Component({
   selector: 'app-form',

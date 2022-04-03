@@ -7,11 +7,11 @@ import { StoreModule } from '@ngrx/store';
 
 import { AppComponent } from './app.component';
 import { peopleReducer } from './state-management/reducers/people.reducer';
-import { FormComponent } from './views/form/form.component';
-import { ListComponent } from './views/list/list.component';
+import { FormComponent } from './views/sample-state-management/form/form.component';
+import { ListComponent } from './views/sample-state-management/list/list.component';
 import { UserListComponent } from './views/user-list/user-list.component';
 import { PaginationComponent } from './views/user-list/pagination/pagination.component';
-import { EditModalComponent } from './views/list/edit-modal/edit-modal.component';
+import { EditModalComponent } from './views/sample-state-management/list/edit-modal/edit-modal.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { UserFilterPipe } from './pipes/user-filter.pipe';
 import { SampleStateManagementComponent } from './views/sample-state-management/sample-state-management.component';
