@@ -14,6 +14,8 @@ import { PaginationComponent } from './views/user-list/pagination/pagination.com
 import { EditModalComponent } from './views/list/edit-modal/edit-modal.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { UserFilterPipe } from './pipes/user-filter.pipe';
+import { SampleStateManagementComponent } from './views/sample-state-management/sample-state-management.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { UserFilterPipe } from './pipes/user-filter.pipe';
     UserListComponent,
     UserFilterPipe,
     PaginationComponent,
-    EditModalComponent
+    EditModalComponent,
+    SampleStateManagementComponent
   ],
   imports: [
     BrowserModule,
@@ -31,6 +34,7 @@ import { UserFilterPipe } from './pipes/user-filter.pipe';
     CommonModule,
     HttpClientModule,
     ReactiveFormsModule,
+    AppRoutingModule,
     ModalModule.forRoot(),
     StoreModule.forRoot({
       name: peopleReducer,
